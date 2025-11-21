@@ -1,0 +1,101 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  background-color: #f9f9f9;
+  margin: 0;
+}
+
+.store-hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/1200x400/?fashion,store') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.store-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.store-hero p {
+  font-size: 1.5rem;
+  color: #f0f0f0;
+}
+
+.store-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+}
+
+.store-card {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 15px;
+  width: 280px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.store-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+}
+
+.store-card h2 {
+  margin-bottom: 15px;
+  color: #1a237e;
+  font-size: 1.5rem;
+}
+
+.store-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 4px 0;
+}
+
+.store-map {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.store-map h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.store-map iframe {
+  border-radius: 12px;
+  border: 2px solid #1a237e;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 1024px) {
+  .store-hero h1 {
+    font-size: 2.5rem;
+  }
+  .store-hero p {
+    font-size: 1.3rem;
+  }
+  .store-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .store-hero h1 {
+    font-size: 2rem;
+  }
+  .store-hero p {
+    font-size: 1.1rem;
+  }
+  .store-card {
+    width: 90%;
+  }
+}

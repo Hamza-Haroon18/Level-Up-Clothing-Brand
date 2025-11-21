@@ -1,0 +1,84 @@
+.addmodal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1b263b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.addmodal-form {
+  background-color: white;
+  padding: 25px 30px;
+  width: 550px;            
+  max-height: 85vh;        
+  overflow-y: auto;  
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;         
+  position: relative;
+}
+
+.addmodal-form h2 {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid grey;
+  font-size: 20px;
+  color: #1e2a44;
+}
+
+.addmodal-form label {
+  font-weight: 600;
+  margin-top: 10px;
+  color: #000;
+}
+
+.addmodal-form input,
+.addmodal-form select {
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.addmodal-form button {
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.addmodal-form button:hover {
+  background-color: #555;
+}
+.addmodal-form img {
+  width: 150px;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.size-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.size-checkboxes label {
+  font-weight: normal;
+  margin-top: 5px;
+}
+

@@ -1,0 +1,108 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #1b263b;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section */
+.shipping-hero {
+  background: linear-gradient(135deg, #0d1b2a, #1b263b);
+  color: #fff;
+  padding: 120px 20px 80px;
+  text-align: center;
+}
+
+.shipping-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.shipping-hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: auto;
+  color: #ccc;
+}
+
+/* Shipping Details Section */
+.shipping-details {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 80px 20px;
+  gap: 30px;
+}
+
+.shipping-card {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.1);
+  flex: 1 1 300px;
+  max-width: 350px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.shipping-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0,0,0,0.15);
+}
+
+.shipping-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #0d1b2a;
+}
+
+.shipping-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Shipping Policies Section */
+.shipping-policies {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 40px 20px;
+  background-color: #1e2a44;
+  border-radius: 16px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.2);
+}
+
+.shipping-policies h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.shipping-policies p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #d1d1d1;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .shipping-hero h1 { font-size: 2.6rem; }
+  .shipping-hero p { font-size: 1.1rem; }
+}
+
+@media (max-width: 768px) {
+  .shipping-details { flex-direction: column; align-items: center; }
+  .shipping-card { max-width: 90%; }
+  .shipping-hero h1 { font-size: 2.2rem; }
+}
+
+@media (max-width: 480px) {
+  .shipping-hero h1 { font-size: 1.8rem; }
+  .shipping-hero p { font-size: 1rem; }
+  .shipping-card h2 { font-size: 1.3rem; }
+}
